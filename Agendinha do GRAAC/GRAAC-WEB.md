@@ -1,27 +1,27 @@
-# **Documentação Agendinha do GRAAC**
+# **Documentação Agendinha do GRAAC - WEB**
 
 ## **Sobre**
 Esse arquivo servirá como um guia para ajudar a manter os projetos padronizados.
 
 ## **Padrão de Nomenclatura**
 
-| Elemento                | Padrão       | Descrição                                                                 |
-|-------------------------|--------------|---------------------------------------------------------------------------|
-| Variáveis               | Camel Case   | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase`           |
-| Funções                 | Camel Case   | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase`           |
-| Arquivos → Componentes  | Pascal Case  | Letra inicial maiúscula — Ex: `PascalCase`, `VariavelPascalCase`         |
-| Arquivos → Páginas      | Pascal Case  | Letra inicial maiúscula — Ex: `PascalCase`, `VariavelPascalCase`         |
-| Arquivos → Restantes    | Camel Case   | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase`           |
-| Idioma                  | Inglês (preferencial) | Português caso necessário                                         |
+| Elemento | Padrão | Descrição |
+|----------|--------|-----------|
+| Variáveis | Camel Case | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase` |
+| Funções | Camel Case | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase` |
+| Arquivos → Componentes | Pascal Case | Letra inicial maiúscula — Ex: `PascalCase`, `VariavelPascalCase` |
+| Arquivos → Páginas | Pascal Case | Letra inicial maiúscula — Ex: `PascalCase`, `VariavelPascalCase` |
+| Arquivos → Restantes | Camel Case | Letra inicial minúscula — Ex: `camelCase`, `variavelCamelCase` |
+| Idioma | Inglês (preferencial) | Português caso necessário |
 
 
 ## **Organização de Pastas**
 
-| Categoria             | Padrão / Valor | Descrição                                                                 |
-|-----------------------|----------------|---------------------------------------------------------------------------|
-| Nomenclatura          | Snake Case     | Todas letras em minúsculo, palavras diferentes separadas por underline. <br>Ex: `snake_case`, `pasta_snake_case` |
-| Nível de hierarquia   | Caminho        | Diretório raiz do projeto que contém as pastas principais                |
-
+| Categoria | Padrão / Valor | Descrição |
+|-----------|----------------|-----------|
+| Nomenclatura | Snake Case | Todas letras em minúsculo, palavras diferentes separadas por underline. <br>Ex: `snake_case`, `pasta_snake_case` |
+| Nível de hierarquia | Caminho | Diretório raiz do projeto que contém as pastas principais |
+---
 ```plaintext
 raiz/
 
@@ -48,25 +48,25 @@ e geralmente retorna algo (como endpoints de API ou algo relacionado ao lado do 
 ```
 ## **Padrão do Código**
 
-|  Categoria  |  Diretriz | Observações   |  
-|-------------|-----------|---------------|
-| Escrita     | Preferencialmente em inglês  | Evite termos como `CadastroSystem` ou `AtendimentoState`.   |   
-| Comentários | Evite comentários |  O código sempre precisa ser escrito para que sua rotina não precise de comentários. Se achar necessário, pode usar variáveis como `doSomethingLikeThis`, que possuem nomes grandes mas bem especificados. Para interfaces e classes criadas apenas como modelo, se necessário, use `JSDoc`.                                  |  
-| Identação   | Quatro espaços ou um tab  |   
+|  Categoria  |  Diretriz | Observações |  
+|-------------|-----------|------------- |
+| Escrita | Preferencialmente em inglês  | Evite termos como `CadastroSystem` ou `AtendimentoState`. |   
+| Comentários | Evite comentários | O código sempre precisa ser escrito para que sua rotina não precise de comentários. Se achar necessário, pode usar variáveis como `doSomethingLikeThis`, que possuem nomes grandes mas bem especificados. Para interfaces e classes criadas apenas como modelo, se necessário, use `JSDoc`. |  
+| Identação | Quatro espaços ou um tab |   
 
 ## **Git**
 
 | Tipo  | Nomenclatura  | Descrição  |
 |-------|---------------|------------|
-| Branch  | `issue-(id)-(description)` | Sendo `id` o ID da issue criada e `description` uma breve descrição (4 ou 5 palavras no máximo, preferencialmente).<br>**Ex:** `issue-15-add-login-system`          |
-| Commit  | Conventional Commits:<br>`<tipo>: <descrição>`<br>Descrição em inglês, iniciando com verbo no presente simples  |  <ul><li>`test`: indica qualquer tipo de criação ou alteração de códigos de teste.</li><li>`feat`: indica o desenvolvimento de uma nova feature ao projeto.</li><li>`refactor`: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica/regras de negócio do sistema.</li><li>`style`: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma.</li><li>`fix`: utilizado quando há correção de erros que estão gerando bugs no sistema.</li><li>`chore`: indica mudanças no projeto que não afetam o sistema ou arquivos de testes. São mudanças de desenvolvimento.</li><li>`docs`: usado quando há mudanças na documentação do projeto.</li><li>`build`: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.</li><li>`revert`: indica a reversão de um commit anterior.</li></ul> 🔗 [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+| Branch | `issue-(id)-(description)` | Sendo `id` o ID da issue criada e `description` uma breve descrição (4 ou 5 palavras no máximo, preferencialmente).<br>**Ex:** `issue-15-add-login-system` |
+| Commit  | Conventional Commits:<br>`<tipo>: <descrição>`<br>Descrição em inglês, iniciando com verbo no presente simples |  <ul><li>`test`: indica qualquer tipo de criação ou alteração de códigos de teste.</li><li>`feat`: indica o desenvolvimento de uma nova feature ao projeto.</li><li>`refactor`: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica/regras de negócio do sistema.</li><li>`style`: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma.</li><li>`fix`: utilizado quando há correção de erros que estão gerando bugs no sistema.</li><li>`chore`: indica mudanças no projeto que não afetam o sistema ou arquivos de testes. São mudanças de desenvolvimento.</li><li>`docs`: usado quando há mudanças na documentação do projeto.</li><li>`build`: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.</li><li>`revert`: indica a reversão de um commit anterior.</li></ul> 🔗 [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) |
 
 ## **Pull Request**
 
 |  Categoria  | Diretriz / Padrão  | 
 |-------------|--------------------|
-| Descrição   |  Referencie sempre qual issue o PR está solucionando em sua descrição. Use `#(id)`, sendo id o id da issue. Pode-se usar `Closes #(id)` ou `Fecha #(id)`. Descrições de PR podem ser feitas em português ou inglês |
-| Título      | O título segue o padrão de `[issue-(id)] Título da issue`  |
+| Descrição | Referencie sempre qual issue o PR está solucionando em sua descrição. Use `#(id)`, sendo id o id da issue. Pode-se usar `Closes #(id)` ou `Fecha #(id)`. Descrições de PR podem ser feitas em português ou inglês |
+| Título | O título segue o padrão de `[issue-(id)] Título da issue` |
 | Aprovação | Coordenador: **Guilherme Samuel** |
 
 ## **Boas Práticas**

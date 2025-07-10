@@ -1,32 +1,29 @@
-# **Documentação VApt**
+# **Documentação VApt - WEB**
 
 ## **Sobre**
 Esse arquivo servirá como um guia para ajudar a manter os projetos padronizados.
 
 ## **Padrão de Nomenclatura**
 
-| Categoria               | Padrão             | Regras                                                                 |
-|-------------------------|--------------------|-----------------------------------------------------------------------|
-| **Variáveis**           | `camelCase`        | Primeiro nome inicia com letra minúscula, os seguintes com maiúscula sem searação o por espaços (ex: `variavelExemplo`, `camelCase`). |
-| **Funções/Métodos**     | `camelCase`        | Mesmo padrão de variáveis (`variavelExemplo`, `camelCase`).                      |
-| **Classes (Bloco principal)**     | **Metodologia BEM** | Separação de nomes com hífen (ex: `class-example`).                    |
-| **Classes (Elementos)** | **Metodologia BEM**       | Bloco principal + dois underlines + elemento (ex: `class-example__element`)                     |
-| **Arquivos -> componentes** | `PascalCase`     |Todos nomes se iniciam em letras maiúscula, sem separação por espaços (ex: `PascalCase`, `ArquivoComponente`)            |
-| **Arquivos -> static**  | `PascalCase` ou minúsculo | Todos nomes se iniciam em letras maiúscula, sem separação por espaços (ex: `PascalCase`, `ArquivoComponente`), caso tenha apenas um nome mantenha em minúsculo |
-| **Arquivos -> restantes** | `kebab-case`      | Todos nomes se iniciam em litras minúsculas, com separação por hífen (ex: `kebab-case`, `arquivo-exemplo`)            |
-| **Idioma**              | Inglês ou Português   | -                                                                     |
+| Categoria |Padrão | Regras |
+|-----------|-------|--------|
+| **Variáveis** | `camelCase` | Primeiro nome inicia com letra minúscula, os seguintes com maiúscula sem separação o por espaços (ex: `variavelExemplo`, `camelCase`) |
+| **Funções/Métodos** | `camelCase` | Mesmo padrão de variáveis (`variavelExemplo`, `camelCase`) |
+| **Classes (Bloco principal)** | **Metodologia BEM** | Separação de nomes com hífen (ex: `class-example`) |
+| **Classes (Elementos)** | **Metodologia BEM** | Bloco principal + dois underlines + elemento (ex: `class-example__element`) |
+| **Arquivos -> componentes** | `PascalCase` | Todos nomes se iniciam em letras maiúscula, sem separação por espaços (ex: `PascalCase`, `ArquivoComponente`) |
+| **Arquivos -> static** | `PascalCase` ou minúsculo | Todos nomes se iniciam em letras maiúscula, sem separação por espaços (ex: `PascalCase`, `ArquivoComponente`), caso tenha apenas um nome mantenha em minúsculo |
+| **Arquivos -> restantes** | `kebab-case` | Todos nomes se iniciam em litras minúsculas, com separação por hífen (ex: `kebab-case`, `arquivo-exemplo`) |
+| **Idioma** | Inglês ou Português | - |
 
 ## **Organização de Pastas**
 
-
-| Categoria    | Padrão     | Observações                                                                                      |
-|--------------|------------|--------------------------------------------------------------------------------------------------|
+| Categoria    | Padrão     | Observações |
+|--------------|------------|-------------|
 | Nomenclatura | Snake Case | Todas letras em minúsculo, palavras separadas por underline.<br>Ex: `snake_case`, `pasta_snake_case` |
-| Exceções     | -          | Pastas para configuração de testes e GitHub.                     |
-| Idioma       | Inglês     | -                                       |
-
+| Exceções | - | Pastas para configuração de testes e GitHub. |
+| Idioma | Inglês | - |
 ---
-
 ```plaintext
 raiz/
 ├── /assets                       → O diretório contém arquivos não compilados, como arquivos stylus ou sass, imagens ou fontes.
@@ -66,15 +63,14 @@ um componente para vários
 │   └── ISSUE_TEMPLATE             → Armazena o template para a issue do repositório
 ```
 
-
 ## **Padrão do Código**
 
 |  Categoria | Diretriz  | Descrição |   
 |------------|-----------|-----------|
-| Escrita      | Inglês  | -         | 
-| Comentários  | -       | Breve descrição do que cada parte do método faz. Escrita em português | 
+| Escrita      | Inglês  | - | 
+| Comentários  | - | Breve descrição do que cada parte do método faz. Escrita em português | 
 
-Identação:<br>
+**Identação:**<br>
 **HTML** -> Quebra de linha para blocos como ``<template>``, ``<div>``, ``<button>``.
 Para cada nivel de alinhamento insira dois espaços em relação ao bloco pai.
 Abrir e fechar os blocos na mesma profundidade.
@@ -111,13 +107,13 @@ method() {
 
 | Tipo  | Nomenclatura  | Descrição  |
 |-------|---------------|------------|
-| Branch  | `issue-(id)` | Sendo id um valor numérico inteiro Ex: issue-15|
-| Commit  | Conventional Commits:<br>`<tipo>: <descrição>`<br>Descrição em inglês, iniciando com verbo no presente simples  |  <ul><li>`test`: indica qualquer tipo de criação ou alteração de códigos de teste.</li><li>`feat`: indica o desenvolvimento de uma nova feature ao projeto.</li><li>`refactor`: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica/regras de negócio do sistema.</li><li>`style`: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma.</li><li>`fix`: utilizado quando há correção de erros que estão gerando bugs no sistema.</li><li>`chore`: indica mudanças no projeto que não afetam o sistema ou arquivos de testes. São mudanças de desenvolvimento.</li><li>`docs`: usado quando há mudanças na documentação do projeto.</li><li>`build`: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.</li><li>`revert`: indica a reversão de um commit anterior.</li></ul> 🔗 [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+| Branch  | `issue-(id)` | Sendo id um valor numérico inteiro Ex: issue-15 |
+| Commit  | Conventional Commits:<br>`<tipo>: <descrição>`<br>Descrição em inglês, iniciando com verbo no presente simples  |  <ul><li>`test`: indica qualquer tipo de criação ou alteração de códigos de teste.</li><li>`feat`: indica o desenvolvimento de uma nova feature ao projeto.</li><li>`refactor`: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica/regras de negócio do sistema.</li><li>`style`: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma.</li><li>`fix`: utilizado quando há correção de erros que estão gerando bugs no sistema.</li><li>`chore`: indica mudanças no projeto que não afetam o sistema ou arquivos de testes. São mudanças de desenvolvimento.</li><li>`docs`: usado quando há mudanças na documentação do projeto.</li><li>`build`: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas.</li><li>`revert`: indica a reversão de um commit anterior.</li></ul> 🔗 [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) |
 
 ## **Pull Request**
 
 |  Categoria  | Diretriz / Padrão  | 
 |-------------|--------------------|
-| Descrição   |  Breve descrição de que o PR estará implementando ou resolvendo, podem ser feitas em português. |
-| Título      | Nome da issue (branch) entre colchetes + descrição da implementação  |
+| Descrição | Breve descrição de que o PR estará implementando ou resolvendo, podem ser feitas em português. |
+| Título | Nome da issue (branch) entre colchetes + descrição da implementação |
 | Aprovação | Coordenador do projeto ou pessoa também relacionada à task |
