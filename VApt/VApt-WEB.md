@@ -3,6 +3,8 @@
 ## **Sobre**
 Esse arquivo servirá como um guia para ajudar a manter os projetos padronizados.
 
+## **Padrão de Nomenclatura**
+
 | Categoria               | Padrão             | Regras                                                                 |
 |-------------------------|--------------------|-----------------------------------------------------------------------|
 | **Variáveis**           | `camelCase`        | Primeiro nome inicia com letra minúscula, os seguintes com maiúscula sem searação o por espaços (ex: `variavelExemplo`, `camelCase`). |
