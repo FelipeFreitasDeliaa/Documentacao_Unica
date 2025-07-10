@@ -9,10 +9,11 @@ Esse arquivo servirá como um guia para ajudar a manter os projetos padronizados
 |-----------|--------|--------- |
 | **Variáveis** | `camelCase` | Primeiro nome inicia com letra minúscula, os seguintes com maiúscula sem separação o por espaços (ex: `variavelExemplo`, `camelCase`). |
 | **Funções/Métodos** | `camelCase` | Mesmo padrão de variáveis (`variavelExemplo`, `camelCase`). |
-| **Arquivos** | `CamelCase` |
-Arquivos CamelCase Primeiro nome inicia em letra minúscula, os seguintes se iniciam com letra maiúscula sem separação sem separação por espaços (ex: `variableExample`, `camelCase`) |
+| **Arquivos** | `CamelCase` | Primeiro nome inicia em letra minúscula, os seguintes se iniciam com letra maiúscula sem separação por espaços (ex: `variableExample`, `camelCase`) |
+| **Arquivos -> scripts** | `SnakeCase` | Todo nome em minúsculo e separaçao por underline (ex: `coluna_exemplo`, `snake_case`) |
+| **Tabelas** | Minusculo | Nome todo em minúsculo |
 | **Colunas**  | `SnakeCase` | Todo nome em minúsculo e separaçao por underline (ex: `coluna_exemplo`, `snake_case`) |
-| **Idioma** | Inglês | -  |
+| **Idioma** | Inglês | -  |SS
 
 ## **Organização de Pastas**
 
